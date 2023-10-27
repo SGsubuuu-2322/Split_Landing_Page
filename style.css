@@ -7,6 +7,7 @@
   --right-btn-hover-color: rgb(92, 236, 84);
   --hover-width: 75%;
   --other-width: 25%;
+  --speed: 1000ms;
 }
 
 * {
@@ -113,4 +114,11 @@ h1 {
 }
 .hover-right .left {
   width: var(--other-width);
+}
+
+.split.left,
+.split.right,
+.split.left::before,
+.split.right::before {
+  transition: all var(--speed) ease-in-out;
 }
