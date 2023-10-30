@@ -1,3 +1,4 @@
+/* These are the general stylings for the root, custom variables and body... */
 @import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
 
 :root {
@@ -21,6 +22,7 @@ body {
   margin: 0;
 }
 
+/* This is for heading-title */
 h1 {
   font-size: 4rem;
   color: rgb(255, 255, 255);
@@ -31,6 +33,7 @@ h1 {
   white-space: nowrap;
 }
 
+/* These stylings are for the buttons */
 .btn {
   color: #fff;
   position: absolute;
@@ -59,12 +62,14 @@ h1 {
   border-color: var(--right-btn-hover-color);
 }
 
+/* This is for the main container */
 .container {
   position: relative;
   height: 100%;
   width: 100%;
   background-color: #333;
 }
+/* This is the for the split container and its effects */
 
 .split {
   position: absolute;
@@ -123,6 +128,7 @@ h1 {
   transition: all var(--speed) ease-in-out;
 }
 
+/* This is for the responsiveness of the project... */
 @media (max-width: 800px) {
   h1 {
     font-size: 2rem;
