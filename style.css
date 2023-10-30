@@ -46,6 +46,8 @@ h1 {
   justify-content: center;
   font-weight: bolder;
   text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .split.left .btn:hover {
@@ -73,9 +75,8 @@ h1 {
 
 .split.left {
   left: 0;
-  background-image: url("https://images.unsplash.com/photo-1615346411392-bda67da184be?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZHVjYXRpJTIwcGFuaWdhbGUlMjB2NHxlbnwwfHwwfHx8MA%3D%3D");
+  background-image: url("https://images.unsplash.com/photo-1625811488513-12099f33ebe2?auto=format&fit=crop&q=80&w=1922&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
 }
 
@@ -91,7 +92,6 @@ h1 {
   right: 0;
   background-image: url("https://wallpapercave.com/dwp1x/wp1882510.jpg");
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
 }
 .split.right::before {
@@ -121,4 +121,16 @@ h1 {
 .split.left::before,
 .split.right::before {
   transition: all var(--speed) ease-in-out;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+    top: 30%;
+  }
+
+  .btn {
+    width: 12rem;
+    padding: 1.2rem;
+  }
 }
